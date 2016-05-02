@@ -863,7 +863,7 @@ a {
   position: relative;
   border: 1px solid #ddd;
 /*background: #fff;*/
-  background: rgba(255,255,255,0.4) scroll 0% 0%;
+  background: rgba(255,255,255,0.8) scroll 0% 0%;
   -webkit-transition: all 0.2s ease-in;
 }
 .article.show {
