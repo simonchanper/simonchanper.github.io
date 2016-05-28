@@ -6,22 +6,22 @@
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Little Hitomi Monster">
-    <title>hello-blog - Little Hitomi Monster</title>
+    <title>阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network - Little Hitomi Monster</title>
     <meta name="author" content="Xiang Chen">
     
         <link rel="icon" href="/assets/images/favicon.png">
     
     
-    <meta name="description">
+    <meta name="description" content="CUHK MMLAB&amp;#x51FA;&amp;#x54C1;&amp;#xFF0C;&amp;#x8BE5;&amp;#x8BBA;&amp;#x6587;&amp;#x4E3B;&amp;#x8981;&amp;#x4EFB;&amp;#x52A1;&amp;#x7528;&amp;#x5C0F;&amp;#x8F66;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x6765;&amp;#x4F30;&amp;#x8BA1;viewpoint&amp;#x7684;&amp;#x4F4D;&amp;#x7F">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="hello-blog">
-<meta property="og:url" content="http://simonchanper.github.io/28/05/2016/hello-blog/index.html">
+<meta property="og:title" content="阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network">
+<meta property="og:url" content="http://simonchanper.github.io/28/05/2016/review-viewpoint/index.html">
 <meta property="og:site_name" content="Little Hitomi Monster">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-05-28T07:23:05.000Z">
+<meta property="og:description" content="CUHK MMLAB&amp;#x51FA;&amp;#x54C1;&amp;#xFF0C;&amp;#x8BE5;&amp;#x8BBA;&amp;#x6587;&amp;#x4E3B;&amp;#x8981;&amp;#x4EFB;&amp;#x52A1;&amp;#x7528;&amp;#x5C0F;&amp;#x8F66;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x6765;&amp;#x4F30;&amp;#x8BA1;viewpoint&amp;#x7684;&amp;#x4F4D;&amp;#x7F">
+<meta property="og:updated_time" content="2016-05-28T07:45:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello-blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network">
+<meta name="twitter:description" content="CUHK MMLAB&amp;#x51FA;&amp;#x54C1;&amp;#xFF0C;&amp;#x8BE5;&amp;#x8BBA;&amp;#x6587;&amp;#x4E3B;&amp;#x8981;&amp;#x4EFB;&amp;#x52A1;&amp;#x7528;&amp;#x5C0F;&amp;#x8F66;&amp;#x7684;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x6765;&amp;#x4F30;&amp;#x8BA1;viewpoint&amp;#x7684;&amp;#x4F4D;&amp;#x7F">
     
     
     
@@ -164,11 +164,11 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            hello-blog
+            阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network
         </h1>
     
     <div class="post-meta">
-    <time itemprop="datePublished" content="Sat May 28 2016 09:10:41 GMT+0200">
+    <time itemprop="datePublished" content="Sat May 28 2016 09:43:14 GMT+0200">
 	
 		    May 28, 2016
     	
@@ -185,7 +185,22 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            
+            <p>CUHK MMLAB&#x51FA;&#x54C1;&#xFF0C;&#x8BE5;&#x8BBA;&#x6587;&#x4E3B;&#x8981;&#x4EFB;&#x52A1;&#x7528;&#x5C0F;&#x8F66;&#x7684;&#x6570;&#x636E;&#x5E93;&#x6765;&#x4F30;&#x8BA1;viewpoint&#x7684;&#x4F4D;&#x7F6E;&#x3002;Viewpoint&#x5BF9;&#x4E8E;&#x4E09;&#x7EF4;&#x91CD;&#x5EFA;&#x6765;&#x8BF4;&#xFF0C;&#x5176;&#x91CD;&#x8981;&#x6027;&#x4E0D;&#x8A00;&#x800C;&#x55BB;&#xFF0C;&#x5982;&#x679C;&#x80FD;&#x591F;&#x5728;&#x7F3A;&#x5931;&#x6444;&#x50CF;&#x5934;&#x53C2;&#x6570;&#xFF0C;&#x6DF1;&#x5EA6;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x4F30;&#x8BA1;&#x51FA;viewpoint&#xFF0C;&#x5219;&#x5BF9;&#x4E8E;&#x5927;&#x91CF;&#x975E;&#x89C4;&#x8303;&#x7684;&#x4E92;&#x8054;&#x7F51;&#x56FE;&#x7247;&#x7B49;&#xFF0C;&#x5C31;&#x6709;&#x53EF;&#x80FD;&#x518D;&#x5229;&#x7528;&#x4E8E;&#x4E09;&#x7EF4;&#x91CD;&#x5EFA;&#x3002;</p>
+<ol>
+<li>&#x9996;&#x5148;&#xFF0C;&#x8BE5;&#x6587;&#x601D;&#x8DEF;&#x5206;&#x4E24;&#x6B65;&#x8D70;,&#x5148;&#x505A;&#x7269;&#x4F53;&#x68C0;&#x6D4B;&#xFF0C;&#x7136;&#x540E;&#x4F5C;viewpoint&#x4F30;&#x8BA1;&#xFF0C;&#x5B9E;&#x9A8C;&#x4E0E;&#x6D4B;&#x8BD5;&#x7684;&#x6570;&#x636E;&#x4E3A;EPFL&#x7684;&#x5C0F;&#x8F66;&#x6570;&#x636E;&#x5E93;</li>
+<li>&#x7B97;&#x6CD5;pipeline&#x7531;&#x4E09;&#x4E2A;&#x6A21;&#x5757;&#x7EC4;&#x6210;,&#x9996;&#x5148;&#x4F7F;&#x7528;HoG&#x7684;&#x56FE;&#x50CF;patch&#x901A;&#x8FC7;cnn&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;mask,&#x7136;&#x540E;&#x5C06;mask&#x4E0E;HoG&#x56FE;&#x50CF;patch&#x540C;&#x65F6;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;&#x751F;&#x6210;masked&#x56FE;&#x50CF;,&#x6700;&#x540E;&#x5C06;masked&#x56FE;&#x50CF;&#x4F5C;&#x4E3A;&#x8F93;&#x5165;,&#x901A;&#x8FC7;cnnv&#x548C;cnnd&#x6765;&#x5BF9;&#x76EE;&#x6807;&#x8FDB;&#x884C;&#x9884;&#x6D4B; (detection label &amp; viewpoint) &#x8F93;&#x51FA;&#x53C2;&#x6570;&#x4E3A;</li>
+<li>CNNm&#x627E;&#x51FA;&#x5224;&#x65AD;&#x7279;&#x5F81;&#x7684;&#x4F4D;&#x7F6E;(&#x56FE;&#x50CF;patch&#x4E2D;),CNNd&#x68C0;&#x6D4B;&#x7269;&#x4F53;,CNNv&#x4F30;&#x8BA1;viewpoint </li>
+<li>200<em>200 &#x56FE;&#x7247;crop&#x6210;23</em>23&#x7684;patch,&#x8F6C;HoG[0,1]</li>
+<li>CNNv&#x548C;CNNd&#x6BD4;CNNm&#x591A;&#x4E00;&#x5C42;fc,&#x7528;&#x6765;&#x8F93;&#x51FA;qv,qd</li>
+<li>mask layer, &#x67D0;&#x4E2A;&#x5168;&#x94FE;&#x63A5;&#x5C42;, element-wise minimum&#x64CD;&#x4F5C;(HoG &#x4E0E; mask),masked&#x56FE;&#x7247;&#x4E3A;&#x7269;&#x4F53;&#x68C0;&#x6D4B;,0&#x7684;&#x5C31;&#x662F;&#x5565;&#x90FD;&#x6CA1;&#x6709;,Ii&#x5C31;&#x662F;&#x5BF9;&#x5E94;&#x7269;&#x4F53;,&#x6C7D;&#x8F66;&#x8F6E;&#x5B50;&#x5148;&#x9A8C;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x4ECE;&#x4FA7;&#x9762;&#x62CD;&#x6444;&#x7684;,&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5F3A;&#x5236;&#x7A00;&#x758F;,&#x5927;&#x591A;&#x6570;mi&#x5E94;&#x8BE5;&#x662F;&#x63A5;&#x8FD1;0,&#x4F46;&#x662F;&#x63A5;&#x8FD1;1&#x7684;&#x65F6;&#x5019;&#x662F;&#x7A00;&#x758F;,&#x540C;&#x65F6;&#x8003;&#x8651;&#x5230;car&#x7684;&#x5224;&#x65AD;&#x7279;&#x5F81;&#x8981;&#x6BD4;&#x80CC;&#x666F;&#x5BB9;&#x6613;,&#x6240;&#x4EE5;mi&#x7684;&#x4F4D;&#x7F6E;&#x63A5;&#x8FD1;1&#x7684;&#x65F6;&#x5019;&#x5E94;&#x8BE5;&#x90FD;&#x96C6;&#x4E2D;&#x5728;&#x7269;&#x4F53;&#x4E0A;.</li>
+<li>&#x76EE;&#x6807;&#x9884;&#x6D4B; CNNd&#x6709;&#x4E24;&#x4E2A;&#x8F93;&#x51FA;,&#x5206;&#x522B;&#x4E3A;&#x542B;&#x6709;&#x7269;&#x4F53;&#x548C;&#x4E0D;&#x542B;&#x6709;&#x7269;&#x4F53;, Nvp&#x8F93;&#x51FA;&#x662F;&#x79BB;&#x6563;&#x7684;&#x6982;&#x7387;&#x4F30;&#x8BA1;</li>
+<li>viewpoint&#x4F30;&#x8BA1; &#x79BB;&#x6563;viewpoint&#x8BAD;&#x7EC3; &#x7ED3;&#x679C;&#x5E76;&#x4E0D;&#x7406;&#x60F3; &#x63D2;&#x503C;</li>
+<li>&#x524D;&#x666F;&#x548C;&#x540E;&#x666F; (&#x6B63;&#x8D1F;&#x6837;&#x672C;) &#x524D;&#x666F;&#x7528;&#x957F;&#x65B9;&#x5F62;&#x7684;box&#x6846;&#x51FA;,&#x505A;patch,&#x957F;&#x65B9;&#x5F62;&#x7684;box&#x4E2D;&#x5FC3;&#x521A;&#x597D;&#x4E3A;patch&#x56FE;&#x50CF;&#x4E2D;&#x5FC3;</li>
+<li>&#x8BD5;&#x9A8C;&#x7ED3;&#x679C; &#x5982;&#x8BBA;&#x6587; &#x8BC4;&#x4F30; mppe (Mean Precision of Pose Estimation) &#x548C; ap (Average Precision VOC), Median Angular Error (MAE) , Mean Angular Error (MnAE)</li>
+</ol>
+<hr>
+<p>&#x672A;&#x5B8C;&#x5F85;&#x6539;</p>
+
             
                 
 
@@ -197,7 +212,7 @@
             <div class="post-footer-tags">
                 <span class="text-color-light text-small">TAGGED IN</span><br/>
                 
-    <a class="tag tag--primary tag--small t-link" href="/tags/code/">code</a>
+    <a class="tag tag--primary tag--small t-link" href="/tags/Review-Object-Detection-Viewpoint-Estimation-Auto-masking-CNN/">Review, Object Detection, Viewpoint Estimation, Auto-masking, CNN</a>
 
             </div>
         
@@ -206,7 +221,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/28/05/2016/review-viewpoint/"  data-tooltip="阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -214,7 +229,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/28/05/2016/sceneunderstanding/" data-tooltip="Road Segmentation">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/28/05/2016/hello-blog/" data-tooltip="hello-blog">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -229,19 +244,19 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Google+" href="https://plus.google.com/share?url=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Google+" href="https://plus.google.com/share?url=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
        
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Twitter" href="https://twitter.com/intent/tweet?text=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Twitter" href="https://twitter.com/intent/tweet?text=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
 
          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=1850331&amp;url=http://simonchanper.github.io/28/05/2016/hello-blog/&amp;title=hello-blog">
+            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=1850331&amp;url=http://simonchanper.github.io/28/05/2016/review-viewpoint/&amp;title=阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network">
                 <i class="fa fa-weibo"></i>
             </a>
         </li>
@@ -284,7 +299,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/28/05/2016/review-viewpoint/"  data-tooltip="阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -292,7 +307,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/28/05/2016/sceneunderstanding/" data-tooltip="Road Segmentation">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/28/05/2016/hello-blog/" data-tooltip="hello-blog">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -307,19 +322,19 @@
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Google+" href="https://plus.google.com/share?url=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Google+" href="https://plus.google.com/share?url=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
        
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Twitter" href="https://twitter.com/intent/tweet?text=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至Twitter" href="https://twitter.com/intent/tweet?text=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
 
          <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=1850331&amp;url=http://simonchanper.github.io/28/05/2016/hello-blog/&amp;title=hello-blog">
+            <a class="post-action-btn btn btn--default" target="new" data-tooltip="分享至新浪微博" href="http://www.jiathis.com/send/?webid=tsina&amp;appkey=&amp;uid=1850331&amp;url=http://simonchanper.github.io/28/05/2016/review-viewpoint/&amp;title=阅读笔记 - Object Detection and Viewpoint Estimation with Auto-masking Neural Network">
                 <i class="fa fa-weibo"></i>
             </a>
         </li>
@@ -346,17 +361,17 @@
                 <div id="share-options-bar" class="share-options-bar" data-behavior="1">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-google-plus"></i><span class="">Share on Google Plus</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://simonchanper.github.io/28/05/2016/hello-blog/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://simonchanper.github.io/28/05/2016/review-viewpoint/">
                 <i class="fa fa-twitter"></i><span>Share on Twitter</span>
             </a>
         </li>
